@@ -54,28 +54,71 @@ const queue = new Queue()
 #### `.enqueue(items)`
 Pushes new `items` to the end of the queue.
 
+```js
+queue.enqueue(1)
+queue.enqueue(2, 3)
+queue.enqueue([ 4, 5, 6])
+```
+
 
 #### `.dequeue()`
 Removes and returns the item which is up for processing. Returns `undefined` if the queue is empty.
+
+```js
+queue.enqueue(1, 2, 3)
+queue.size() // 3
+
+queue.dequeue() // 1
+queue.size() // 2
+```
 
 
 #### `.peek()`
 Returns the front item without removing it from the queue. Returns `undefined` if the queue is empty.
 
+```js
+queue.enqueue(1, 2, 3)
+queue.peek() // 1
+```
+
 
 #### `.size()`
 Returns the number of items in the queue.
+
+```js
+queue.size() // 0
+queue.enqueue(1, 2)
+queue.size() // 2
+```
 
 
 #### `.isEmpty()`
 Returns `true` if there are no items in the queue, `false` otherwise.
 
+```js
+queue.isEmpty() // true
+queue.enqueue(1)
+queue.isNotEmpty() // false
+```
+
 
 #### `.isNotEmpty()`
 Returns `true` if there are items in the queue, `false` when the queue is empty.
 
+```js
+queue.isNotEmpty() // false
+queue.enqueue(1)
+queue.isNotEmpty() // true
+```
+
+
 #### `.clear()`
 Removes all items from the queue.
+
+```js
+queue.clear()
+queue.size() // 0
+```
 
 
 ## Contributing
