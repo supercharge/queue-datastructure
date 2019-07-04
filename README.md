@@ -35,7 +35,7 @@ npm install @supercharge/queue-datastructure
 ## Usage
 Using the queue data structure is pretty straightforward. The library exposes a `Queue` class and you need to create a queue instance. You can create a queue from existing data or an empty one:
 
-```
+```js
 const Queue = require('@supercharge/queue-datastructure')
 
 // create a queue from an existing array
