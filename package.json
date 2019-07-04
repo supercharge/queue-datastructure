@@ -1,12 +1,14 @@
 {
-  "name": "@supercharge/datastructure-queue",
+  "name": "@supercharge/queue-datastructure",
   "description": "Supercharge Queue Data Structure",
   "version": "0.0.0",
   "author": "Marcus Pöhls <marcus@futurestud.io>",
   "bugs": {
-    "url": "https://github.com/superchargejs/datastructure-queue/issues"
+    "url": "https://github.com/superchargejs/queue-datastructure/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "~4.17.11"
+  },
   "devDependencies": {
     "@hapi/code": "~5.3.1",
     "@hapi/lab": "~19.1.0",
@@ -20,7 +22,7 @@
   "engines": {
     "node": ">=8"
   },
-  "homepage": "https://github.com/superchargejs/datastructure-queue",
+  "homepage": "https://github.com/superchargejs/queue-datastructure",
   "keywords": [
     "data-structure",
     "data-structures",
@@ -32,7 +34,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/superchargejs/datastructure-queue.git"
+    "url": "git+https://github.com/superchargejs/queue-datastructure.git"
   },
   "scripts": {
     "lint": "eslint --fix",
