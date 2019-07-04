@@ -19,7 +19,9 @@ class Queue {
    * @param  {Mixed} items
    */
   enqueue (...items) {
-    this._queue.push(...items)
+    this._queue = this._queue.concat(
+      _.flatten([ ...items ])
+    )
   }
 
   /**

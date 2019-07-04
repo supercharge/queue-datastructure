@@ -29,6 +29,9 @@ describe('Queue', () => {
     queue.enqueue(4, 5)
     expect(queue.size()).to.equal(5)
     expect(queue.peek()).to.equal(1)
+
+    queue.enqueue([ 6, 7 ])
+    expect(queue.size()).to.equal(7)
   })
 
   it('.dequeue()', async () => {
