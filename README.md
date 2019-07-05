@@ -26,7 +26,7 @@
 ## Installation
 
 ```
-npm install @supercharge/queue-datastructure
+npm i @supercharge/queue-datastructure
 ```
 
 
