@@ -24,14 +24,17 @@
   },
   "homepage": "https://github.com/superchargejs/queue-datastructure",
   "keywords": [
-    "data-structure",
-    "data-structures",
-    "queue",
     "supercharge",
-    "superchargejs"
+    "superchargejs",
+    "queue",
+    "data-structure",
+    "data-structures"
   ],
   "license": "MIT",
   "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/superchargejs/queue-datastructure.git"
