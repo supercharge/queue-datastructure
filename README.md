@@ -13,7 +13,8 @@
   <br/>
   <br/>
   <p>
-    <a href="https://travis-ci.com/superchargejs/datastructure-queue"><img src="https://travis-ci.com/superchargejs/datastructure-queue.svg?branch=master" alt="Build Status" data-canonical-src="https://travis-ci.com/superchargejs/datastructure-queue.svg?branch=master" style="max-width:100%;"></a>
+    <a href="https://travis-ci.com/superchargejs/queue-datastructure"><img src="https://travis-ci.com/superchargejs/queue-datastructure.svg?branch=master" alt="Build Status" data-canonical-src="https://travis-ci.com/superchargejs/queue-datastructure.svg?branch=master" style="max-width:100%;"></a>
+    <a href="https://www.npmjs.com/package/@supercharge/queue-datastructure"><img src="https://img.shields.io/npm/v/@supercharge/queue-datastructure.svg" alt="Latest Version"></a>
   </p>
   <p>
     <em>Follow <a href="http://twitter.com/marcuspoehls">@marcuspoehls</a> and <a href="http://twitter.com/superchargejs">@superchargejs</a> for updates!</em>
