@@ -1,6 +1,12 @@
 <div align="center">
+  <a href="https://superchargejs.com">
+    <img width="471" style="max-width:100%;" src="https://superchargejs.com/images/supercharge-text.svg" />
+  </a>
   <br/>
   <br/>
+  <p>
+    <h3>Queue Datastructure</h3>
+  </p>
   <p>
     A queue data structure for Node.js.
   </p>
