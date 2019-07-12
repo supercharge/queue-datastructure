@@ -15,7 +15,7 @@ describe('Queue', () => {
   })
 
   it('creates a new Queue() from an array', async () => {
-    const queue = new Queue([ 1, 2 ])
+    const queue = new Queue([1, 2])
 
     expect(queue.size()).to.equal(2)
     expect(queue.dequeue()).to.equal(1)
@@ -30,7 +30,7 @@ describe('Queue', () => {
     expect(queue.size()).to.equal(5)
     expect(queue.peek()).to.equal(1)
 
-    queue.enqueue([ 6, 7 ])
+    queue.enqueue([6, 7])
     expect(queue.size()).to.equal(7)
   })
 

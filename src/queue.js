@@ -10,7 +10,7 @@ class Queue {
    * @param  {Mixed} items
    */
   constructor (...items) {
-    this._queue = _.flatten([ ...items ])
+    this._queue = _.flatten([...items])
   }
 
   /**
@@ -20,7 +20,7 @@ class Queue {
    */
   enqueue (...items) {
     this._queue = this._queue.concat(
-      _.flatten([ ...items ])
+      _.flatten([...items])
     )
   }
 
