@@ -53,6 +53,11 @@ describe('Queue', () => {
     expect(queue.size()).to.equal(2)
   })
 
+  it('.toArray()', async () => {
+    const queue = new Queue(1, 2, 3)
+    expect(queue.toArray()).to.equal([1, 2, 3])
+  })
+
   it('.isEmpty()', async () => {
     const queue = new Queue(1)
     expect(queue.isEmpty()).to.be.false()

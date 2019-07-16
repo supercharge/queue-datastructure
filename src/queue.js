@@ -56,6 +56,15 @@ class Queue {
   }
 
   /**
+   * Returns all items in the queue.
+   *
+   * @returns {Array}
+   */
+  toArray () {
+    return this._queue.slice(0)
+  }
+
+  /**
    * Returns `true` if there are no items in
    * the queue, `false` otherwise.
    *
