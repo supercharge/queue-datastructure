@@ -1,7 +1,5 @@
 'use strict'
 
-const _ = require('lodash')
-
 class Queue {
   /**
    * Creates a new Queue instance and
@@ -10,7 +8,7 @@ class Queue {
    * @param  {Mixed} items
    */
   constructor (...items) {
-    this._queue = _.flatten([...items])
+    this._queue = [].concat(...items)
   }
 
   /**
@@ -20,7 +18,7 @@ class Queue {
    */
   enqueue (...items) {
     this._queue = this._queue.concat(
-      _.flatten([...items])
+      [].concat(...items)
     )
   }
 
