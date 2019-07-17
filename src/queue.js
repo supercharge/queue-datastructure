@@ -58,7 +58,7 @@ class Queue {
    *
    * @returns {Array}
    */
-  toArray () {
+  items () {
     return this._queue.slice(0)
   }
 
