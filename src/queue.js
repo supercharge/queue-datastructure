@@ -80,7 +80,7 @@ class Queue {
    * @returns {Boolean}
    */
   isNotEmpty () {
-    return this.size() > 0
+    return !this.isEmpty()
   }
 
   /**
