@@ -102,7 +102,7 @@ Returns `true` if there are no items in the queue, `false` otherwise.
 ```js
 queue.isEmpty() // true
 queue.enqueue(1)
-queue.isNotEmpty() // false
+queue.isEmpty() // false
 ```
 
 
