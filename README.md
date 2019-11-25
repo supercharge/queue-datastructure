@@ -19,7 +19,6 @@
   <br/>
   <br/>
   <p>
-    <a href="https://travis-ci.com/superchargejs/queue-datastructure"><img src="https://travis-ci.com/superchargejs/queue-datastructure.svg?branch=master" alt="Build Status" data-canonical-src="https://travis-ci.com/superchargejs/queue-datastructure.svg?branch=master" style="max-width:100%;"></a>
     <a href="https://www.npmjs.com/package/@supercharge/queue-datastructure"><img src="https://img.shields.io/npm/v/@supercharge/queue-datastructure.svg" alt="Latest Version"></a>
   </p>
   <p>
