@@ -1,7 +1,7 @@
 # Changelog
 
 
-## [1.2.0](https://github.com/superchargejs/queue-datastructure/compare/v1.1.1...v1.2.0) - 2020-04-xx
+## [1.2.0](https://github.com/supercharge/queue-datastructure/compare/v1.1.1...v1.2.0) - 2020-04-xx
 
 ### Added
 - the `.enqueue` method returns the queue instance allowing fluent method calls
@@ -15,7 +15,7 @@
 - moved to GitHub Actions for testing and removed `.travis.yml`
 
 
-## [1.1.1](https://github.com/superchargejs/queue-datastructure/compare/v1.1.0...v1.1.1) - 2019-09-24
+## [1.1.1](https://github.com/supercharge/queue-datastructure/compare/v1.1.0...v1.1.1) - 2019-09-24
 
 ### Updated
 - bump dependencies
@@ -23,7 +23,7 @@
 - refine tests
 
 
-## [1.1.0](https://github.com/superchargejs/queue-datastructure/compare/v1.0.1...v1.1.0) - 2019-07-17
+## [1.1.0](https://github.com/supercharge/queue-datastructure/compare/v1.0.1...v1.1.0) - 2019-07-17
 
 ### Added
 - `.items()` method returning the queue’s items as an array
@@ -32,7 +32,7 @@
 - remove `lodash` as a dependency
 
 
-## [1.0.1](https://github.com/superchargejs/queue-datastructure/compare/v1.0.0...v1.0.1) - 2019-07-12
+## [1.0.1](https://github.com/supercharge/queue-datastructure/compare/v1.0.0...v1.0.1) - 2019-07-12
 
 ### Updated
 - bump dependencies
