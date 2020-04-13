@@ -1,8 +1,8 @@
 'use strict'
 
+const Queue = require('..')
 const Lab = require('@hapi/lab')
 const { expect } = require('@hapi/code')
-const Queue = require('..')
 
 const { describe, it } = (exports.lab = Lab.script())
 
