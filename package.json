@@ -29,9 +29,9 @@
   ],
   "homepage": "https://github.com/supercharge/queue-datastructure",
   "keywords": [
+    "queue",
     "data-structure",
     "data-structures",
-    "queue",
     "supercharge",
     "superchargejs"
   ],
