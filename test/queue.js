@@ -62,6 +62,14 @@ describe('Queue', () => {
     expect(
       new Queue([1, 2, 3]).items()
     ).to.equal([1, 2, 3])
+
+    expect(
+      new Queue([])
+        .enqueue(1, 2)
+        .enqueue(3)
+        .enqueue([4, 5, 6])
+        .items()
+    ).to.equal([1, 2, 3, 4, 5, 6])
   })
 
   it('.isEmpty()', async () => {
