@@ -8,7 +8,7 @@
     <h3>Queue Datastructure</h3>
   </p>
   <p>
-    A queue data structure for Node.js.
+    A queue data structure for Node.js and JavaScript.
   </p>
   <br/>
   <p>
@@ -36,7 +36,7 @@ npm i @supercharge/queue-datastructure
 
 
 ## Usage
-Using the queue data structure is pretty straightforward. The library exposes a `Queue` class and you need to create a queue instance. You can create a queue from existing data or an empty one:
+Using the queue data structure is pretty straightforward. The library exposes a `Queue` class that you can use to create a queue instance. You can create a queue from existing data or an empty one:
 
 ```js
 const Queue = require('@supercharge/queue-datastructure')
@@ -55,17 +55,20 @@ const queue = new Queue()
 ## API
 
 #### `.enqueue(items)`
-Pushes new `items` to the end of the queue.
+Push new `items` to the end of the queue.
 
 ```js
-queue.enqueue(1)
-queue.enqueue(2, 3)
-queue.enqueue([ 4, 5, 6])
+queue
+  .enqueue(1)
+  .enqueue(2, 3)
+  .enqueue([ 4, 5, 6])
+
+// Queue: 1, 2, 3, 4, 5, 6
 ```
 
 
 #### `.dequeue()`
-Removes and returns the item which is up for processing. Returns `undefined` if the queue is empty.
+Remove and return the item which is up for processing. Returns `undefined` if the queue is empty.
 
 ```js
 queue.enqueue(1, 2, 3)
@@ -77,7 +80,7 @@ queue.size() // 2
 
 
 #### `.peek()`
-Returns the front item without removing it from the queue. Returns `undefined` if the queue is empty.
+Returns the first item without removing it from the queue. Returns `undefined` if the queue is empty.
 
 ```js
 queue.enqueue(1, 2, 3)
