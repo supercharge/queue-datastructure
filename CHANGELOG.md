@@ -1,7 +1,7 @@
 # Changelog
 
 
-## [1.2.0](https://github.com/supercharge/queue-datastructure/compare/v1.1.1...v1.2.0) - 2020-04-xx
+## [1.2.0](https://github.com/supercharge/queue-datastructure/compare/v1.1.1...v1.2.0) - 2020-04-13
 
 ### Added
 - the `.enqueue` method returns the queue instance allowing fluent method calls
