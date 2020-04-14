@@ -1,27 +1,29 @@
 'use strict'
 
-const Queue = require('..')
-const Lab = require('@hapi/lab')
-const { expect } = require('@hapi/code')
+import Queue from '../src'
+import * as Lab from '@hapi/lab'
+import { expect } from '@hapi/code'
 
-const { describe, it } = (exports.lab = Lab.script())
+const lab = Lab.script()
+const { describe, it } = lab
+export { lab }
 
 describe('Queue', () => {
-  it('creates an empty new Queue()', async () => {
+  it('creates an empty new Queue()', () => {
     const queue = new Queue()
 
     expect(queue.size()).to.equal(0)
     expect(queue.peek()).to.be.undefined()
   })
 
-  it('creates a new Queue() from an array', async () => {
+  it('creates a new Queue() from an array', () => {
     const queue = new Queue([1, 2])
 
     expect(queue.size()).to.equal(2)
     expect(queue.dequeue()).to.equal(1)
   })
 
-  it('.enqueue()', async () => {
+  it('.enqueue()', () => {
     const queue = new Queue(1, 2)
     queue.enqueue(3)
     expect(queue.size()).to.equal(3)
@@ -34,27 +36,27 @@ describe('Queue', () => {
     expect(queue.size()).to.equal(7)
   })
 
-  it('.dequeue()', async () => {
+  it('.dequeue()', () => {
     const queue = new Queue(1)
     expect(queue.dequeue()).to.equal(1)
     expect(queue.size()).to.equal(0)
     expect(queue.dequeue()).to.be.undefined()
   })
 
-  it('.peek()', async () => {
+  it('.peek()', () => {
     const queue = new Queue(1, 2, 3)
     const item = queue.peek()
     expect(item).to.equal(1)
     expect(queue.size()).to.equal(3)
   })
 
-  it('.size()', async () => {
+  it('.size()', () => {
     expect(
       new Queue(1, 2).size()
     ).to.equal(2)
   })
 
-  it('.items()', async () => {
+  it('.items()', () => {
     expect(
       new Queue(1, 2, 3).items()
     ).to.equal([1, 2, 3])
@@ -72,7 +74,7 @@ describe('Queue', () => {
     ).to.equal([1, 2, 3, 4, 5, 6])
   })
 
-  it('.isEmpty()', async () => {
+  it('.isEmpty()', () => {
     const queue = new Queue(1)
     expect(queue.isEmpty()).to.be.false()
 
@@ -80,7 +82,7 @@ describe('Queue', () => {
     expect(queue.isEmpty()).to.be.true()
   })
 
-  it('.isNotEmpty()', async () => {
+  it('.isNotEmpty()', () => {
     const queue = new Queue(1)
     expect(queue.isNotEmpty()).to.be.true()
     expect(queue.isEmpty()).to.be.false()
@@ -90,7 +92,7 @@ describe('Queue', () => {
     expect(queue.isEmpty()).to.be.true()
   })
 
-  it('.clear()', async () => {
+  it('.clear()', () => {
     const queue = new Queue(1)
     expect(queue.isEmpty()).to.be.false()
 
