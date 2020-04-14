@@ -54,5 +54,6 @@
     "test:run": "lab --transform node_modules/lab-transform-typescript --assert @hapi/code --leaks --coverage --reporter console --output stdout --reporter html --output ./coverage/coverage.html",
     "test:single": "lab --transform node_modules/lab-transform-typescript --assert @hapi/code --leaks --lint --id",
     "test:types": "tsc"
-  }
+  },
+  "types": "dist"
 }
