@@ -1,13 +1,11 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "target": "es2018",
+    "target": "es2017",
     "module": "commonjs",
     "lib": [
       "es2018"
     ],
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
     "removeComments": false,
     "moduleResolution": "node",
     "outDir": "./dist",
