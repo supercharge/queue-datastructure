@@ -1,7 +1,16 @@
 # Changelog
 
 
-## [1.2.0](https://github.com/supercharge/queue-datastructure/compare/v1.1.1...v1.2.0) - 2020-04-13
+## [1.3.1](https://github.com/supercharge/queue-datastructure/compare/v1.3.0...v1.3.1) - 2020-04-20
+
+### Updated
+- use ES2017 as output target (Node.js v8)
+
+### Fixed
+- secret token to publish the package in the GitHub Package Registry
+
+
+## [1.3.0](https://github.com/supercharge/queue-datastructure/compare/v1.2.0...v1.3.0) - 2020-04-14
 
 ### Added
 - link `types` in `package.json`
