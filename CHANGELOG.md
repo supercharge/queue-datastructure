@@ -1,6 +1,20 @@
 # Changelog
 
 
+## [2.0.0](https://github.com/supercharge/queue-datastructure/compare/v1.3.1...v2.0.0) - 2020-08-16
+
+### Added
+- make the queue generic
+- making the queue generic enables IntelliSense support for items
+- implement the `Iterable` interface via `[Symbol.iterator]` to allow iterators and `for..of` loops
+
+### Updated
+- use [`@supercharge/tsconfig`](https://github.com/supercharge/tsconfig) as the base TypeScript config
+
+### Breaking Changes
+This version transitions the queue instance to a generic queue. This enforces queue items to be of the same type when using TypeScript. You probably used the queue already for items of the same type. If not, `2.0` may be a breaking change for you.
+
+
 ## [1.3.1](https://github.com/supercharge/queue-datastructure/compare/v1.3.0...v1.3.1) - 2020-04-20
 
 ### Updated
