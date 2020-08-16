@@ -23,7 +23,6 @@ jobs:
       - name: Run tests
         run: npm test
 
-
   publish-gpr:
     needs: build
     runs-on: ubuntu-latest
