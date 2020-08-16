@@ -34,9 +34,9 @@ export class Queue<T> implements Iterable<T> {
    *
    * @returns {Queue}
    */
-  enqueue (...items: any[]): this {
+  enqueue (...items: T[]): this {
     this.queue = this.queue.concat(
-      [].concat(...items)
+      ([] as T[]).concat(...items)
     )
 
     return this
@@ -48,7 +48,7 @@ export class Queue<T> implements Iterable<T> {
    *
    * @returns {*}
    */
-  dequeue (): any {
+  dequeue (): T | undefined {
     return this.queue.shift()
   }
 
@@ -58,7 +58,7 @@ export class Queue<T> implements Iterable<T> {
    *
    * @returns {*}
    */
-  peek (): any {
+  peek (): T | undefined {
     return this.queue[0]
   }
 
@@ -76,7 +76,7 @@ export class Queue<T> implements Iterable<T> {
    *
    * @returns {Array}
    */
-  items (): any[] {
+  items (): T[] {
     return this.queue.slice(0)
   }
 
