@@ -1,10 +1,12 @@
 'use strict'
 
-export class Queue {
+import { QueueIterator } from './iterator'
+
+export class Queue<T> implements Iterable<T> {
   /**
    * An internal list keeping the queued items.
    */
-  private queue: any[]
+  private queue: T[]
 
   /**
    * Creates a new Queue instance and
@@ -12,8 +14,17 @@ export class Queue {
    *
    * @param  {*} items
    */
-  constructor (...items: any[]) {
-    this.queue = [].concat(...items)
+  constructor (...items: T[]) {
+    this.queue = ([] as T[]).concat(...items)
+  }
+
+  /**
+   * Returns an iterable of the values in the queue.
+   *
+   * @returns {IterableIterator}
+   */
+  [Symbol.iterator] (): IterableIterator<T> {
+    return new QueueIterator(this.queue)
   }
 
   /**
