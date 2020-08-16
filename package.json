@@ -7,21 +7,17 @@
     "url": "https://github.com/supercharge/queue-datastructure/issues"
   },
   "devDependencies": {
-    "@hapi/code": "~7.0.0",
-    "@hapi/lab": "~21.0.0",
-    "@typescript-eslint/eslint-plugin": "~2.34.0",
-    "eslint": "~6.8.0",
+    "@types/jest": "~26.0.10",
+    "@typescript-eslint/eslint-plugin": "~3.9.0",
+    "eslint": "~7.7.0",
     "eslint-config-standard": "~14.1.1",
-    "eslint-config-standard-with-typescript": "~17.0.0",
-    "eslint-plugin-import": "~2.20.2",
+    "eslint-config-standard-with-typescript": "~18.0.2",
+    "eslint-plugin-import": "~2.22.0",
     "eslint-plugin-node": "~11.1.0",
     "eslint-plugin-promise": "~4.2.1",
     "eslint-plugin-standard": "~4.0.1",
-    "lab-transform-typescript": "~3.0.1",
-    "typescript": "~3.9.2"
-  },
-  "engines": {
-    "node": ">=8"
+    "jest": "~26.4.0",
+    "typescript": "~3.9.7"
   },
   "files": [
     "dist",
@@ -46,13 +42,17 @@
   },
   "scripts": {
     "build": "tsc",
+    "build:dev": "tsc --watch",
     "lint": "eslint src --ext .js,.ts",
     "lint:fix": "eslint src --ext .js,.ts --fix",
-    "list:tests": "lab --assert @hapi/code --dry --verbose",
+    "list:tests": "jest --listTests",
     "test": "npm run build && npm run lint && npm run test:run",
-    "test:run": "lab --transform node_modules/lab-transform-typescript --assert @hapi/code --leaks --coverage --reporter console --output stdout --reporter html --output ./coverage/coverage.html",
+    "test:run": "jest --config=jest.config.js",
     "test:single": "lab --transform node_modules/lab-transform-typescript --assert @hapi/code --leaks --lint --id",
     "test:types": "tsc"
   },
-  "types": "dist"
+  "types": "dist",
+  "dependencies": {
+    "@supercharge/tsconfig": "~1.0.0"
+  }
 }
