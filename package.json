@@ -7,6 +7,7 @@
     "url": "https://github.com/supercharge/queue-datastructure/issues"
   },
   "devDependencies": {
+    "@supercharge/tsconfig": "~1.0.0",
     "@types/jest": "~26.0.10",
     "@typescript-eslint/eslint-plugin": "~3.9.0",
     "eslint": "~7.7.0",
@@ -17,10 +18,11 @@
     "eslint-plugin-promise": "~4.2.1",
     "eslint-plugin-standard": "~4.0.1",
     "jest": "~26.4.0",
+    "ts-jest": "~26.2.0",
     "typescript": "~3.9.7"
   },
   "files": [
-    "dist",
+    "dist/src",
     "index.js"
   ],
   "homepage": "https://github.com/supercharge/queue-datastructure",
@@ -51,8 +53,5 @@
     "test:single": "lab --transform node_modules/lab-transform-typescript --assert @hapi/code --leaks --lint --id",
     "test:types": "tsc"
   },
-  "types": "dist",
-  "dependencies": {
-    "@supercharge/tsconfig": "~1.0.0"
-  }
+  "types": "dist"
 }

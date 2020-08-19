@@ -1,8 +1,10 @@
 'use strict'
 
 module.exports = {
+  preset: 'ts-jest',
   collectCoverage: true,
-  testMatch: ['**/test/**/*.[jt]s?(x)'],
+  testEnvironment: 'node',
   coverageReporters: ['text', 'html'],
-  coverageDirectory: '<rootDir>/coverage/'
+  coverageDirectory: '<rootDir>/coverage/',
+  testMatch: ['<rootDir>/test/**/*.ts'] //   testMatch: ['**/test/**/*.[jt]s?(x)'],
 }
