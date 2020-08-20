@@ -1,6 +1,18 @@
 # Changelog
 
 
+## [2.1.0](https://github.com/supercharge/queue-datastructure/compare/v2.0.0...v2.1.0) - 2020-08-20
+
+### Updated
+- move tests to TypeScript
+- test directly the TypeScript code via `ts-jest`
+- point `main` in `package.json` to export the transpiled code
+- point `types` in `package.json` to export the types from the transpiled code
+
+### Removed
+- deleted `index.js` file which acted as a middleman to export the transpiled code
+
+
 ## [2.0.0](https://github.com/supercharge/queue-datastructure/compare/v1.3.1...v2.0.0) - 2020-08-16
 
 ### Added
@@ -9,6 +21,7 @@
 - implement the `Iterable` interface via `[Symbol.iterator]` to allow iterators and `for..of` loops
 
 ### Updated
+- test with jest
 - use [`@supercharge/tsconfig`](https://github.com/supercharge/tsconfig) as the base TypeScript config
 
 ### Breaking Changes
