@@ -22,8 +22,7 @@
     "typescript": "~3.9.7"
   },
   "files": [
-    "dist/src",
-    "index.js"
+    "dist/src"
   ],
   "homepage": "https://github.com/supercharge/queue-datastructure",
   "keywords": [
@@ -34,7 +33,7 @@
     "superchargejs"
   ],
   "license": "MIT",
-  "main": "index.js",
+  "main": "dist/src",
   "publishConfig": {
     "access": "public"
   },
@@ -53,5 +52,5 @@
     "test:single": "lab --transform node_modules/lab-transform-typescript --assert @hapi/code --leaks --lint --id",
     "test:types": "tsc"
   },
-  "types": "dist"
+  "types": "dist/src"
 }
