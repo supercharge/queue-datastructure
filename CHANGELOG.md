@@ -1,6 +1,25 @@
 # Changelog
 
 
+## [3.0.0](https://github.com/supercharge/queue-datastructure/compare/v2.1.0...v3.0.0) - 2022-xx-xx
+
+### Updated
+- bump dependencies
+
+### Breaking Changes
+- require Node.js v14, drop support for Node.js v10 and v12
+- use named exports: use `import { Queue } from '@supercharge/queue-datastructure`
+  ```ts
+  // before
+  import Queue from '@supercharge/queue-datastructure'
+  const Queue = require('@supercharge/queue-datastructure')
+
+  // now
+  import { Queue } from '@supercharge/queue-datastructure'
+  const { Queue } = require('@supercharge/queue-datastructure')
+  ```
+
+
 ## [2.1.0](https://github.com/supercharge/queue-datastructure/compare/v2.0.0...v2.1.0) - 2020-08-20
 
 ### Updated
