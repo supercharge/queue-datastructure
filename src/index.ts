@@ -1,5 +1,3 @@
 'use strict'
 
-import { Queue } from './queue'
-
-export = Queue
+export * from './queue'

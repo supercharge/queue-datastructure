@@ -1,6 +1,6 @@
 'use strict'
 
-import Queue from '../src'
+import { Queue } from '../src'
 
 describe('Queue', () => {
   it('creates an empty new Queue', () => {
@@ -128,13 +128,10 @@ describe('Queue', () => {
 
     const items = []
 
-    for (const item of iterable) {
-      items.push(item)
-      break
-    }
+    items.push(iterable.next().value)
     expect(items).toEqual([1])
 
-    // Continue with same iterable:
+    // Continue with same iterable
     for (const item of iterable) {
       items.push(item)
     }
