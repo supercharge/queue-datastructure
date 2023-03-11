@@ -19,7 +19,7 @@ export class Queue<T> implements Iterable<T> {
   }
 
   /**
-   * Returns an iterable of the values in the queue.
+   * Returns an iterator for the queue values.
    *
    * @returns {IterableIterator}
    */

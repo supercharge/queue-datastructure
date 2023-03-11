@@ -21,7 +21,7 @@ export class QueueIterator<T> implements IterableIterator<T> {
   }
 
   /**
-   * Returns iteself to allow reusing iterators when exiting a loop early (via break, return, etc.).
+   * Returns itself to allow reusing iterators when exiting a loop early (via break, return, etc.).
    *
    * @returns {IterableIterator}
    */
