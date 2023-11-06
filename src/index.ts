@@ -1,3 +1,3 @@
 'use strict'
 
-export * from './queue'
+export { Queue } from './queue.js'
