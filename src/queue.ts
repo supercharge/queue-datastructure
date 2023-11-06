@@ -1,6 +1,5 @@
-'use strict'
 
-import { QueueIterator } from './iterator'
+import { QueueIterator } from './iterator.js'
 
 export class Queue<T> implements Iterable<T> {
   /**

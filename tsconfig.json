@@ -2,15 +2,13 @@
   "extends": "@supercharge/tsconfig",
   "compilerOptions": {
     "outDir": "./dist",
-    "lib": [
-      "es2017"
-    ]
   },
   "include": [
     "./**/*"
   ],
   "exclude": [
     "./node_modules",
-    "./dist"
+    "./dist",
+    "./test",
   ]
 }

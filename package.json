@@ -7,17 +7,23 @@
     "url": "https://github.com/supercharge/queue-datastructure/issues"
   },
   "devDependencies": {
-    "@supercharge/eslint-config-typescript": "~2.0.0",
-    "@supercharge/tsconfig": "~3.1.0",
-    "@types/jest": "~27.5.1",
-    "eslint": "~8.15.0",
-    "jest": "~28.1.0",
-    "ts-jest": "~28.0.2",
-    "typescript": "~4.6.4"
+    "@supercharge/eslint-config-typescript": "~4.0.0",
+    "@supercharge/tsconfig": "~7.0.0",
+    "c8": "~8.0.1",
+    "eslint": "~8.53.0",
+    "expect": "~29.7.0",
+    "typescript": "~5.2.2",
+    "uvu": "~0.5.6"
   },
   "files": [
-    "dist/src"
+    "dist"
   ],
+  "main": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "type": "module",
+  "types": "dist",
   "homepage": "https://github.com/supercharge/queue-datastructure",
   "keywords": [
     "queue",
@@ -27,7 +33,6 @@
     "superchargejs"
   ],
   "license": "MIT",
-  "main": "dist/src",
   "publishConfig": {
     "access": "public"
   },
@@ -41,10 +46,8 @@
     "lint": "eslint src --ext .js,.ts",
     "lint:fix": "eslint src --ext .js,.ts --fix",
     "list:tests": "jest --listTests",
-    "test": "npm run build && npm run lint && npm run test:run",
-    "test:run": "jest --config=jest.config.js",
-    "test:single": "lab --transform node_modules/lab-transform-typescript --assert @hapi/code --leaks --lint --id",
-    "test:types": "tsc"
-  },
-  "types": "dist/src"
+    "test": "npm run build && npm run lint && npm run test:run ",
+    "test:run": "c8 --include=dist uvu --ignore helpers",
+    "posttest": "c8 report --reporter=html"
+  }
 }

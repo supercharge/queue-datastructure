@@ -1,4 +1,3 @@
-'use strict'
 
 export class QueueIterator<T> implements IterableIterator<T> {
   /**
@@ -37,7 +36,7 @@ export class QueueIterator<T> implements IterableIterator<T> {
    */
   next (): IteratorResult<T> {
     return this.pointer < this.items.length
-      ? { done: false, value: this.items[this.pointer++] }
+      ? { done: false, value: this.items[this.pointer++] as T }
       : { done: true, value: undefined }
   }
 }
